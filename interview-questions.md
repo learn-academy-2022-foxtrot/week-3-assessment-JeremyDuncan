@@ -87,9 +87,18 @@ let example = () => {console.log("This is a shortened version")};
 4. What is the difference between state values and props in React?
 
 Your answer:
+* The difference between state values and props in React is that a state value 
+is created to represent data to be manipulated. Everytime a state value is 
+updated, React compares the difference of the Virtual DOM and actual DOM and 
+makes changes to only the affected nodes that changed. 
+* Props are used to access the value of state from other components. 
 
 Researched answer:
-
+* According to: https://www.geeksforgeeks.org/what-are-the-differences-between-props-and-state/#:~:text=Props%20are%20used%20to%20pass,be%20passed%20to%20other%20components.
+* State is the part of the application that changes. any component can have a 
+state, and the state is mutable.
+Props are properties that are used to pass data thats unmutable from one 
+component to another.  
 ---
 <!-- ----------------------------------------------------------------------- -->
 5. What is the DOM?
