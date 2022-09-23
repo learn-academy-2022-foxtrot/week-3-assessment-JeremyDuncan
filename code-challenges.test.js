@@ -132,34 +132,72 @@ const getFibonacci = (num) => {
 // ✨  Done in 0.72s.
 //------------------------------------------------------------------------------
 
+//==============================================================================
 // --------------------2) Create a function that takes in an object and returns
-// an array of the numbers sorted from least to greatest.
-// Hint: Check out this resource: Object.values()
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
-
+//  an array of the numbers sorted from least to greatest.
+//==============================================================================
 // a) Create a test with expect statements for each of the variables provided.
+//------------------------------------------------------------------------------
 
-const studyMinutesWeek1 = {
-  sunday: 90,
-  monday: 30,
-  tuesday: 20,
-  wednesday: 15,
-  thursday: 30,
-  friday: 15,
-  saturday: 60,
-};
-// Expected output: [15, 15, 20, 30, 30, 60, 90]
+describe("sortObjNumbers", () => {
+  it("returns an array of the numbers sorted from least to greatest.", () => {
+    //=== Provided Test Cases ===
+    const fullObj1 = {
+      content1: 7,
+      content2: 199,
+      content3: 78,
+      content4: -7,
+      content5: 42,
+    };
+    const fullObj2 = {
+      content1: 23,
+      content2: 772,
+      content3: -3,
+      content4: 6,
+      content5: 71,
+    };
+    //=== Expected Test Results ===
+    const expected1 = [-7, 7, 42, 78, 199];
+    const expected2 = [-3, 6, 23, 71, 772];
 
-const studyMinutesWeek2 = {
-  sunday: 100,
-  monday: 10,
-  tuesday: 45,
-  wednesday: 60,
-  thursday: 20,
-  friday: 15,
-  saturday: 65,
-};
-// Expected output: [10, 15, 20, 45, 60, 65, 100]
+    expect(sortObjNumbers(fullObj1)).toEqual(expected1);
+    expect(sortObjNumbers(fullObj2)).toEqual(expected2);
+  });
+});
+
+//---------------------|| Initial Test Results ||-------------------------------
+// yarn run v1.22.19
+// warning package.json: No license field
+// $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/node_modules/.bin/jest
+//  FAIL  ./code-challenges.test.js
+//   getFibonacci
+//     ✓ returns an array of numbers in Fibonacci sequence (2 ms)
+//     ✓ returns that number must be great then 2
+//     ✓ returns that number must be great then 2 if negative number
+//   sortObjNumbers
+//     ✕ returns an array of the numbers sorted from least to greatest.
+
+//   ● sortObjNumbers › returns an array of the numbers sorted from least to greatest.
+
+//     ReferenceError: sortObjNumbers is not defined
+
+//       161 |     const expected2 = [-3, 6, 23, 71, 772];
+//       162 |
+//     > 163 |     expect(sortObjNumbers(fullObj1)).toEqual(expected1);
+//           |     ^
+//       164 |     expect(sortObjNumbers(fullObj2)).toEqual(expected2);
+//       165 |   });
+//       166 | });
+
+//       at Object.expect (code-challenges.test.js:163:5)
+
+// Test Suites: 1 failed, 1 total
+// Tests:       1 failed, 3 passed, 4 total
+// Snapshots:   0 total
+// Time:        0.17 s, estimated 1 s
+// Ran all test suites.
+// error Command failed with exit code 1.
+//------------------------------------------------------------------------------
 
 // b) Create the function that makes the test pass.
 
