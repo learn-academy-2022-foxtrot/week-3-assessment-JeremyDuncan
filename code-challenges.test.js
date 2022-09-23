@@ -168,7 +168,8 @@ describe("sortObjNumbers", () => {
 //---------------------|| Initial Test Results ||-------------------------------
 // yarn run v1.22.19
 // warning package.json: No license field
-// $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/node_modules/.bin/jest
+// $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
+// node_modules/.bin/jest
 //  FAIL  ./code-challenges.test.js
 //   getFibonacci
 //     ✓ returns an array of numbers in Fibonacci sequence (2 ms)
@@ -177,7 +178,8 @@ describe("sortObjNumbers", () => {
 //   sortObjNumbers
 //     ✕ returns an array of the numbers sorted from least to greatest.
 
-//   ● sortObjNumbers › returns an array of the numbers sorted from least to greatest.
+//   ● sortObjNumbers › returns an array of the numbers sorted from least to
+//     greatest.
 
 //     ReferenceError: sortObjNumbers is not defined
 
@@ -199,7 +201,45 @@ describe("sortObjNumbers", () => {
 // error Command failed with exit code 1.
 //------------------------------------------------------------------------------
 
+//------------------------------------------------------------------------------
 // b) Create the function that makes the test pass.
+//------------------------------------------------------------------------------
+
+// declare function
+const sortObjNumbers = (obj) => {
+  // create array to hold sorted numbers
+  const numArr = [];
+  // loop through all object keys
+  for (const key in obj) {
+    // for each iteration push the value of the key into the array
+    numArr.push(obj[key]);
+  }
+  // return the value of the array that has been sorted from least to greatest
+  return numArr.sort(function (a, b) {
+    return a - b;
+  });
+};
+
+//--------------------------|| Final Test Results ||----------------------------
+// yarn run v1.22.19
+// warning package.json: No license field
+// $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
+// node_modules/.bin/jest
+//  PASS  ./code-challenges.test.js
+//   getFibonacci
+//     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
+//     ✓ returns that number must be great then 2
+//     ✓ returns that number must be great then 2 if negative number
+//   sortObjNumbers
+//     ✓ returns an array of the numbers sorted from least to greatest.
+
+// Test Suites: 1 passed, 1 total
+// Tests:       4 passed, 4 total
+// Snapshots:   0 total
+// Time:        0.217 s, estimated 1 s
+// Ran all test suites.
+// ✨  Done in 0.76s.
+//------------------------------------------------------------------------------
 
 // --------------------3) Create a function that takes in an array and returns
 // an array of the accumulating sum. An empty array should return an empty array.
