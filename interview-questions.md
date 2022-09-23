@@ -16,7 +16,7 @@ Your answer:
  a language syntax used in React to create web applications.
  * In the return statement of a React component you need to use JSX fragments 
  ("<> </>") to encompase all the code you wish to be displayed in the DOM. These
- fragments can be empty, or contain other elements inside them sich as a div or 
+ fragments can be empty, or contain other elements inside them such as a div or 
  even a table with nested data(as long as all the data is nested inside that 
  fragment)
  * Another intersting note about JSX is that it defaults to display HTML in the 
@@ -30,7 +30,7 @@ camelCase.
 for event listeners on mouse click events.
 
 Researched answer:
-According to: https://reactjs.org/docs/introducing-jsx.html,
+* According to: https://reactjs.org/docs/introducing-jsx.html,
 it is a syntax extension of JavaScript which produce React elements. It also 
 mentions that JSX is not required to create React apps, but it is recomended.
 
@@ -50,7 +50,7 @@ faster and more secure than NPM.
 verifies your applications dependencies. It will download any that are missing. 
 
 Researched answer:
-According to: https://classic.yarnpkg.com/en/docs/getting-started,
+* According to: https://classic.yarnpkg.com/en/docs/getting-started,
 Yarn is a package manager for code that gives developers the ability to share 
 code with others. The code that's stored by Yarn is refered to as a Package or a
 Module. Yarn also uses a file called package.json to describe everything that is 
@@ -61,9 +61,27 @@ in a particular package.
 3. What is an anonymous function in JavaScript?
 
 Your answer:
+* An anonymous function is a function that does not have a name. It can't be 
+called except for on the line of code it was created on. 
 
 Researched answer:
+* According to https://www.javascripttutorial.net/javascript-anonymous-functions/
+An anonymous function is a function that does not have a name.
 
+*Examples:
+```javascript
+let example = function() {
+  console.log("This is an anonymous function");
+}
+```
+```javascript
+(function() {
+  console.log("This is an immediatly invoked anonymous function");
+})();
+```
+```javascript
+let example = () => {console.log("This is a shortened version")};
+```
 ---
 <!-- ----------------------------------------------------------------------- -->
 4. What is the difference between state values and props in React?
@@ -85,6 +103,7 @@ Researched answer:
 6. STRETCH: Which is the difference between a div and a span?
 
 Your answer:
+
 
 Researched answer:
 
