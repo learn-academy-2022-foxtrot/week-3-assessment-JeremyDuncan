@@ -33,7 +33,7 @@ describe("getFibonacci", () => {
     expect(getFibonacci(fibLength1)).toEqual(expected1);
     expect(getFibonacci(fibLength2)).toEqual(expected2);
   });
-  it("returns that number must be great then 2", () => {
+  it("returns that number must be greater than 2", () => {
     //=== Additional Edge Case ===
     const fibLength3 = 2;
     //=== Expected Test Results ===
@@ -41,7 +41,7 @@ describe("getFibonacci", () => {
 
     expect(getFibonacci(fibLength3)).toEqual(expected3);
   });
-  it("returns that number must be great then 2 if negative number", () => {
+  it("returns that number must be greater than 2 if negative number", () => {
     //=== Additional Edge Case ===
     const fibLength4 = -22;
     //=== Expected Test Results ===
@@ -52,7 +52,7 @@ describe("getFibonacci", () => {
 });
 
 //---------------------|| Initial Test Results ||-------------------------------
-// ● getFibonacci › returns that number must be great then 2 if negative number
+// ● getFibonacci › returns that number must be greater than 2 if negative number
 
 // ReferenceError: getFibonacci is not defined
 
@@ -123,8 +123,8 @@ const getFibonacci = (num) => {
 //  PASS  ./code-challenges.test.js
 //   getFibonacci
 //     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
-//     ✓ returns that number must be great then 2
-//     ✓ returns that number must be great then 2 if negative number
+//     ✓ returns that number must be greater than 2
+//     ✓ returns that number must be greater than 2 if negative number
 
 // Test Suites: 1 passed, 1 total
 // Tests:       3 passed, 3 total
@@ -179,8 +179,8 @@ describe("sortObjNumbers", () => {
 //  FAIL  ./code-challenges.test.js
 //   getFibonacci
 //     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
-//     ✓ returns that number must be great then 2
-//     ✓ returns that number must be great then 2 if negative number (2 ms)
+//     ✓ returns that number must be greater than 2
+//     ✓ returns that number must be greater than 2 if negative number (2 ms)
 //   sortObjNumbers
 //     ✕ returns an array of the numbers sorted from least to greatest.
 
@@ -236,8 +236,8 @@ const sortObjNumbers = (obj) => {
 //  PASS  ./code-challenges.test.js
 //   getFibonacci
 //     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
-//     ✓ returns that number must be great then 2
-//     ✓ returns that number must be great then 2 if negative number
+//     ✓ returns that number must be greater than 2
+//     ✓ returns that number must be greater than 2 if negative number
 //   sortObjNumbers
 //     ✓ returns an array of the numbers sorted from least to greatest.
 
@@ -285,8 +285,8 @@ describe("accumulateArray", () => {
 //  FAIL  ./code-challenges.test.js
 //   getFibonacci
 //     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
-//     ✓ returns that number must be great then 2
-//     ✓ returns that number must be great then 2 if negative number (1 ms)
+//     ✓ returns that number must be greater than 2
+//     ✓ returns that number must be greater than 2 if negative number (1 ms)
 //   sortObjNumbers
 //     ✓ returns an array of the numbers sorted from least to greatest.
 //   accumulateArray
@@ -329,4 +329,53 @@ describe("accumulateArray", () => {
 // error Command failed with exit code 1.
 //------------------------------------------------------------------------------
 
+//------------------------------------------------------------------------------
 // b) Create the function that makes the test pass.
+//------------------------------------------------------------------------------
+
+// declare function
+const accumulateArray = (numArr) => {
+  // create variable with a value of zero to hold a value
+  // This is created outside the scope of the map() function so the data can be
+  // persistent across multiple iterations
+  let accumulator = 0;
+
+  //ternary operator:
+  // if input array is empty then "?" return an empty array..
+  // else ":" map through the array..
+  //  then store the value of the sum of "value" and accomulator
+  //  then set the accumulator value to the new value assigned previously
+  //  repeat the accumulation process till the array has been iterated through
+  return numArr.length === 0
+    ? []
+    : numArr.map((value) => {
+        value = value + accumulator;
+        accumulator = value;
+        return value;
+      });
+};
+
+//--------------------------|| Final Test Results ||----------------------------
+// yarn run v1.22.19
+// warning package.json: No license field
+// $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
+// node_modules/.bin/jest
+//  PASS  ./code-challenges.test.js
+//   getFibonacci
+//     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
+//     ✓ returns that number must be greater than 2
+//     ✓ returns that number must be greater than 2 if negative number
+//   sortObjNumbers
+//     ✓ returns an array of the numbers sorted from least to greatest. (1 ms)
+//   accumulateArray
+//     ✓ returns an array of the accumulating sum
+//     ✓ An empty array should return an empty array
+
+// Test Suites: 1 passed, 1 total
+// Tests:       6 passed, 6 total
+// Snapshots:   0 total
+// Time:        0.2 s, estimated 1 s
+// Ran all test suites.
+// ✨  Done in 0.78s.
+//------------------------------------------------------------------------------
+//==============================================================================
