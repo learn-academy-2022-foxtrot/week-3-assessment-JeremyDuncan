@@ -103,10 +103,23 @@ component to another.
 <!-- ----------------------------------------------------------------------- -->
 5. What is the DOM?
 
-Your answer:
+Your answer: 
+* The DOM is known as the Document Object Model and is a visual 
+representaion of the code inside a webpage thats created by a web browser.
 
 Researched answer:
+* According to: https://frontend.turing.edu/lessons/module-1/js-intro-to-the-dom.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=517671727591&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJuq0hVzqEMjsv45Z-vMONxGC3orsxivCMoA2-xD94FqykOaqV7UJLEUaAr5iEALw_wcB,
+* The DOM is the interface for HTML. The DOM is created after the web browser 
+interpets the HTML code. When the DOM is created it produces a DOM tree thats 
+logically organized. The DOM can be accessed by using the document call.
 
+examples:
+```html
+<!-- Accessing the DOM with code -->
+document.getElementById("main-section")
+document.getElementsByTagName("a")[0]
+document.getElementsByTagName("button")
+```
 ---
 <!-- ----------------------------------------------------------------------- -->
 6. STRETCH: Which is the difference between a div and a span?
