@@ -12,40 +12,75 @@ your researched answer in your OWN WORDS.
 1. What is JSX? What is one syntax difference between HTML and JSX?
 
 Your answer:
+* I like to think of JSX as the marriage betwwen HTML and JavaScript. JSX is 
+ a language syntax used in React to create web applications.
+ * In the return statement of a React component you need to use JSX fragments 
+ ("<> </>") to encompase all the code you wish to be displayed in the DOM. These
+ fragments can be empty, or contain other elements inside them sich as a div or 
+ even a table with nested data(as long as all the data is nested inside that 
+ fragment)
+ * Another intersting note about JSX is that it defaults to display HTML in the 
+component return, unless you use the {} to denote JavScript variables, and 
+functions, or React state.
+* One syntax difference is that with styles that use the "-" to denote 
+multi-word keys. In JSX you do not use "-" but instead combine words with 
+camelCase. 
+  * example: font-size = fontSize
+* Another syntax difference is you have to use "onClick" instead of "onclick" 
+for event listeners on mouse click events.
 
 Researched answer:
+according to: https://reactjs.org/docs/introducing-jsx.html,
+it is a syntax extension of JavaScript which produce React elements. It also 
+mentions that JSX is not required to create React apps, but it is recomended.
 
+---
+<!-- ----------------------------------------------------------------------- -->
 2. What is yarn? What file(s) are modified in a React application when you run 
 yarn?
 
 Your answer:
-
+* Yarn is a package manager that allows developers to easily deploy, manage, 
+install, and keep uo to date on the latest versions of software and their 
+dependancies.
+* When you run run Yarn on a React application it checks your app directory and 
+verifies your applications dependencies. It will download any that are missing. 
 Researched answer:
 
+---
+<!-- ----------------------------------------------------------------------- -->
 3. What is an anonymous function in JavaScript?
 
 Your answer:
 
 Researched answer:
 
+---
+<!-- ----------------------------------------------------------------------- -->
 4. What is the difference between state values and props in React?
 
 Your answer:
 
 Researched answer:
 
+---
+<!-- ----------------------------------------------------------------------- -->
 5. What is the DOM?
 
 Your answer:
 
 Researched answer:
 
+---
+<!-- ----------------------------------------------------------------------- -->
 6. STRETCH: Which is the difference between a div and a span?
 
 Your answer:
 
 Researched answer:
 
+---
+<!-- ----------------------------------------------------------------------- -->
 ## Looking Ahead: Terms for Next Week
 
 1. Object-oriented programming:
