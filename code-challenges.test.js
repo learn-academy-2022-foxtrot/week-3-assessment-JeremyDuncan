@@ -1,5 +1,7 @@
 // ASSESSMENT 3: Coding Practical Questions with Jest
 
+const { clear } = require("console");
+
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
 // If you get stuck, please leave comments to help us understand your thought
@@ -211,20 +213,20 @@ describe("sortObjNumbers", () => {
 // b) Create the function that makes the test pass.
 //------------------------------------------------------------------------------
 
-// // declare function
-// const sortObjNumbers = (obj) => {
-//   // create array to hold sorted numbers
-//   const numArr = [];
-//   // loop through all object keys
-//   for (const key in obj) {
-//     // for each iteration push the value of the key into the array
-//     numArr.push(obj[key]);
-//   }
-//   // return the value of the array that has been sorted from least to greatest
-//   return numArr.sort(function (a, b) {
-//     return a - b;
-//   });
-// };
+// declare function
+const sortObjNumbers = (obj) => {
+  // create array to hold sorted numbers
+  const numArr = [];
+  // loop through all object keys
+  for (const key in obj) {
+    // for each iteration push the value of the key into the array
+    numArr.push(obj[key]);
+  }
+  // return the value of the array that has been sorted from least to greatest
+  return numArr.sort(function (a, b) {
+    return a - b;
+  });
+};
 
 //--------------------------|| Final Test Results ||----------------------------
 // yarn run v1.22.19
@@ -247,18 +249,84 @@ describe("sortObjNumbers", () => {
 // ✨  Done in 0.76s.
 //------------------------------------------------------------------------------
 
+//==============================================================================
 // --------------------3) Create a function that takes in an array and returns
-// an array of the accumulating sum. An empty array should return an empty array.
-
+// an array of the accumulating sum. An empty array should return an empty array
+//==============================================================================
 // a) Create a test with expect statements for each of the variables provided.
+//------------------------------------------------------------------------------
+describe("accumulateArray", () => {
+  it("returns an array of the accumulating sum", () => {
+    //=== Provided Test Cases ===
+    const accountTransactions1 = [100, -17, -23, -9];
+    const accountTransactions2 = [250, -89, 100, -96];
+    //=== Expected Test Results ===
+    const expected1 = [100, 83, 60, 51];
+    const expected2 = [250, 161, 261, 165];
 
-const accountTransactions1 = [100, -17, -23, -9];
-// Expected output: [100, 83, 60, 51]
+    expect(accumulateArray(accountTransactions1)).toEqual(expected1);
+    expect(accumulateArray(accountTransactions2)).toEqual(expected2);
+  });
+  it("An empty array should return an empty array", () => {
+    //=== Provided Test Cases ===
+    const accountTransactions3 = [];
+    //=== Expected Test Results ===
+    const expected3 = [];
 
-const accountTransactions2 = [250, -89, 100, -96];
-// Expected output: [250, 161, 261, 165]
+    expect(accumulateArray(accountTransactions3)).toEqual(expected3);
+  });
+});
 
-const accountTransactions3 = [];
-// Expected output: []
+//---------------------|| Initial Test Results ||-------------------------------
+// yarn run v1.22.19
+// warning package.json: No license field
+// $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
+// node_modules/.bin/jest
+//  FAIL  ./code-challenges.test.js
+//   getFibonacci
+//     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
+//     ✓ returns that number must be great then 2
+//     ✓ returns that number must be great then 2 if negative number (1 ms)
+//   sortObjNumbers
+//     ✓ returns an array of the numbers sorted from least to greatest.
+//   accumulateArray
+//     ✕ returns an array of the accumulating sum
+//     ✕ An empty array should return an empty array
+
+//   ● accumulateArray › returns an array of the accumulating sum
+
+//     ReferenceError: accumulateArray is not defined
+
+//       263 |     const expected2 = [250, 161, 261, 165];
+//       264 |
+//     > 265 |     expect(accumulateArray(accountTransactions1)).toEqual(expected1);
+//           |     ^
+//       266 |     expect(accumulateArray(accountTransactions2)).toEqual(expected2);
+//       267 |   });
+//       268 |   it("An empty array should return an empty array", () => {
+
+//       at Object.expect (code-challenges.test.js:265:5)
+
+//   ● accumulateArray › An empty array should return an empty array
+
+//     ReferenceError: accumulateArray is not defined
+
+//       272 |     const expected3 = [];
+//       273 |
+//     > 274 |     expect(accumulateArray(accountTransactions3)).toEqual(expected3);
+//           |     ^
+//       275 |   });
+//       276 | });
+//       277 |
+
+//       at Object.expect (code-challenges.test.js:274:5)
+
+// Test Suites: 1 failed, 1 total
+// Tests:       2 failed, 4 passed, 6 total
+// Snapshots:   0 total
+// Time:        0.176 s, estimated 1 s
+// Ran all test suites.
+// error Command failed with exit code 1.
+//------------------------------------------------------------------------------
 
 // b) Create the function that makes the test pass.
