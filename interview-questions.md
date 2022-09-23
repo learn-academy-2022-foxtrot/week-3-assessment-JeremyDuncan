@@ -30,7 +30,7 @@ camelCase.
 for event listeners on mouse click events.
 
 Researched answer:
-according to: https://reactjs.org/docs/introducing-jsx.html,
+According to: https://reactjs.org/docs/introducing-jsx.html,
 it is a syntax extension of JavaScript which produce React elements. It also 
 mentions that JSX is not required to create React apps, but it is recomended.
 
@@ -43,9 +43,18 @@ Your answer:
 * Yarn is a package manager that allows developers to easily deploy, manage, 
 install, and keep uo to date on the latest versions of software and their 
 dependancies.
+* Yarn's main competitor is NPM, which has been around longer, offers developers 
+essentially the same functionality. The biggest difference being that Yarn is 
+faster and more secure than NPM. 
 * When you run run Yarn on a React application it checks your app directory and 
 verifies your applications dependencies. It will download any that are missing. 
+
 Researched answer:
+According to: https://classic.yarnpkg.com/en/docs/getting-started,
+Yarn is a package manager for code that gives developers the ability to share 
+code with others. The code that's stored by Yarn is refered to as a Package or a
+Module. Yarn also uses a file called package.json to describe everything that is 
+in a particular package.
 
 ---
 <!-- ----------------------------------------------------------------------- -->
