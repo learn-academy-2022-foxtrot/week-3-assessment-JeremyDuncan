@@ -142,26 +142,30 @@ const getFibonacci = (num) => {
 describe("sortObjNumbers", () => {
   it("returns an array of the numbers sorted from least to greatest.", () => {
     //=== Provided Test Cases ===
-    const fullObj1 = {
-      content1: 7,
-      content2: 199,
-      content3: 78,
-      content4: -7,
-      content5: 42,
+    const studyMinutesWeek1 = {
+      sunday: 90,
+      monday: 30,
+      tuesday: 20,
+      wednesday: 15,
+      thursday: 30,
+      friday: 15,
+      saturday: 60,
     };
-    const fullObj2 = {
-      content1: 23,
-      content2: 772,
-      content3: -3,
-      content4: 6,
-      content5: 71,
+    const studyMinutesWeek2 = {
+      sunday: 100,
+      monday: 10,
+      tuesday: 45,
+      wednesday: 60,
+      thursday: 20,
+      friday: 15,
+      saturday: 65,
     };
     //=== Expected Test Results ===
-    const expected1 = [-7, 7, 42, 78, 199];
-    const expected2 = [-3, 6, 23, 71, 772];
+    const expected1 = [15, 15, 20, 30, 30, 60, 90];
+    const expected2 = [10, 15, 20, 45, 60, 65, 100];
 
-    expect(sortObjNumbers(fullObj1)).toEqual(expected1);
-    expect(sortObjNumbers(fullObj2)).toEqual(expected2);
+    expect(sortObjNumbers(studyMinutesWeek1)).toEqual(expected1);
+    expect(sortObjNumbers(studyMinutesWeek2)).toEqual(expected2);
   });
 });
 
@@ -172,9 +176,9 @@ describe("sortObjNumbers", () => {
 // node_modules/.bin/jest
 //  FAIL  ./code-challenges.test.js
 //   getFibonacci
-//     ✓ returns an array of numbers in Fibonacci sequence (2 ms)
+//     ✓ returns an array of numbers in Fibonacci sequence (1 ms)
 //     ✓ returns that number must be great then 2
-//     ✓ returns that number must be great then 2 if negative number
+//     ✓ returns that number must be great then 2 if negative number (2 ms)
 //   sortObjNumbers
 //     ✕ returns an array of the numbers sorted from least to greatest.
 
@@ -183,42 +187,44 @@ describe("sortObjNumbers", () => {
 
 //     ReferenceError: sortObjNumbers is not defined
 
-//       161 |     const expected2 = [-3, 6, 23, 71, 772];
-//       162 |
-//     > 163 |     expect(sortObjNumbers(fullObj1)).toEqual(expected1);
+//       165 |     const expected2 = [10, 15, 20, 45, 60, 65, 100];
+//       166 |
+//     > 167 |     expect(sortObjNumbers(studyMinutesWeek1)).toEqual(expected1);
 //           |     ^
-//       164 |     expect(sortObjNumbers(fullObj2)).toEqual(expected2);
-//       165 |   });
-//       166 | });
+//       168 |     expect(sortObjNumbers(studyMinutesWeek2)).toEqual(expected2);
+//       169 |   });
+//       170 | });
 
-//       at Object.expect (code-challenges.test.js:163:5)
+//       at Object.expect (code-challenges.test.js:167:5)
 
 // Test Suites: 1 failed, 1 total
 // Tests:       1 failed, 3 passed, 4 total
 // Snapshots:   0 total
-// Time:        0.17 s, estimated 1 s
+// Time:        0.227 s, estimated 1 s
 // Ran all test suites.
 // error Command failed with exit code 1.
+// info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this
+// command.
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
 // b) Create the function that makes the test pass.
 //------------------------------------------------------------------------------
 
-// declare function
-const sortObjNumbers = (obj) => {
-  // create array to hold sorted numbers
-  const numArr = [];
-  // loop through all object keys
-  for (const key in obj) {
-    // for each iteration push the value of the key into the array
-    numArr.push(obj[key]);
-  }
-  // return the value of the array that has been sorted from least to greatest
-  return numArr.sort(function (a, b) {
-    return a - b;
-  });
-};
+// // declare function
+// const sortObjNumbers = (obj) => {
+//   // create array to hold sorted numbers
+//   const numArr = [];
+//   // loop through all object keys
+//   for (const key in obj) {
+//     // for each iteration push the value of the key into the array
+//     numArr.push(obj[key]);
+//   }
+//   // return the value of the array that has been sorted from least to greatest
+//   return numArr.sort(function (a, b) {
+//     return a - b;
+//   });
+// };
 
 //--------------------------|| Final Test Results ||----------------------------
 // yarn run v1.22.19
