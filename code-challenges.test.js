@@ -14,16 +14,16 @@ const { clear } = require("console");
 // Run the file with the following command: $ yarn jest
 
 //==============================================================================
-// --------------------1) Create a function that takes in a number
+// --------------------1)👉 Create a function that takes in a number
 // (greater than 2) and returns an array that length containing the numbers
 // of the Fibonacci sequence.
 //==============================================================================
-// a) Create a test with expect statements for each of the variables provided.
+// a)🧪 Create a test with expect statements for each of the variables provided.
 //------------------------------------------------------------------------------
 
 describe("getFibonacci", () => {
   it("returns an array of numbers in Fibonacci sequence", () => {
-    //=== Provided Test Cases ===
+    // === Provided Test Cases ===
     const fibLength1 = 6;
     const fibLength2 = 10;
     //=== Expected Test Results ===
@@ -51,7 +51,7 @@ describe("getFibonacci", () => {
   });
 });
 
-//---------------------|| Initial Test Results ||-------------------------------
+//---------------------||❌ Initial Test Results ❌||---------------------------
 // ● getFibonacci › returns that number must be greater than 2 if negative number
 
 // ReferenceError: getFibonacci is not defined
@@ -77,7 +77,7 @@ describe("getFibonacci", () => {
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
-// b) Create the function that makes the test pass.
+// b)👨‍💻 Create the function that makes the test pass.
 //------------------------------------------------------------------------------
 
 // declare function
@@ -115,7 +115,7 @@ const getFibonacci = (num) => {
   return fibArr;
 };
 
-//--------------------------|| Final Test Results ||----------------------------
+//--------------------||✅ Final Test Results ✅||------------------------------
 // yarn run v1.22.19
 // warning package.json: No license field
 // $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
@@ -135,10 +135,10 @@ const getFibonacci = (num) => {
 //------------------------------------------------------------------------------
 
 //==============================================================================
-// --------------------2) Create a function that takes in an object and returns
-//  an array of the numbers sorted from least to greatest.
+// --------------------2)👉 Create a function that takes in an object and
+//returns an array of the numbers sorted from least to greatest.
 //==============================================================================
-// a) Create a test with expect statements for each of the variables provided.
+// a)🧪 Create a test with expect statements for each of the variables provided.
 //------------------------------------------------------------------------------
 
 describe("sortObjNumbers", () => {
@@ -171,7 +171,7 @@ describe("sortObjNumbers", () => {
   });
 });
 
-//---------------------|| Initial Test Results ||-------------------------------
+//---------------------||❌ Initial Test Results ❌||---------------------------
 // yarn run v1.22.19
 // warning package.json: No license field
 // $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
@@ -210,7 +210,7 @@ describe("sortObjNumbers", () => {
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
-// b) Create the function that makes the test pass.
+// b)👨‍💻 Create the function that makes the test pass.
 //------------------------------------------------------------------------------
 
 // declare function
@@ -228,7 +228,7 @@ const sortObjNumbers = (obj) => {
   });
 };
 
-//--------------------------|| Final Test Results ||----------------------------
+//--------------------||✅ Final Test Results ✅||------------------------------
 // yarn run v1.22.19
 // warning package.json: No license field
 // $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
@@ -250,10 +250,10 @@ const sortObjNumbers = (obj) => {
 //------------------------------------------------------------------------------
 
 //==============================================================================
-// --------------------3) Create a function that takes in an array and returns
+// --------------------3)👉 Create a function that takes in an array and returns
 // an array of the accumulating sum. An empty array should return an empty array
 //==============================================================================
-// a) Create a test with expect statements for each of the variables provided.
+// a)🧪 Create a test with expect statements for each of the variables provided.
 //------------------------------------------------------------------------------
 describe("accumulateArray", () => {
   it("returns an array of the accumulating sum", () => {
@@ -277,7 +277,7 @@ describe("accumulateArray", () => {
   });
 });
 
-//---------------------|| Initial Test Results ||-------------------------------
+//---------------------||❌  Initial Test Results ❌||--------------------------
 // yarn run v1.22.19
 // warning package.json: No license field
 // $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
@@ -330,7 +330,7 @@ describe("accumulateArray", () => {
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
-// b) Create the function that makes the test pass.
+// b)👨‍💻 Create the function that makes the test pass.
 //------------------------------------------------------------------------------
 
 // declare function
@@ -355,7 +355,7 @@ const accumulateArray = (numArr) => {
       });
 };
 
-//--------------------------|| Final Test Results ||----------------------------
+//--------------------||✅ Final Test Results ✅||------------------------------
 // yarn run v1.22.19
 // warning package.json: No license field
 // $ /Users/learnacademy/Desktop/Repos/week-3-assessment-JeremyDuncan/
