@@ -145,22 +145,27 @@ elements that are inline with web page content.
 <!-- ----------------------------------------------------------------------- -->
 ## Looking Ahead: Terms for Next Week
 
-1. Object-oriented programming: OOP is the one of the most popular programming 
+1. Object-oriented programming: 
+* OOP is the one of the most popular programming 
   paradigm used by many languages. With OOP everything is essentially designed 
   around Object's, their data, and methods.
   
-2. Ruby: An object oriented language that is very flexible and easy to 
+2. Ruby: 
+* An object oriented language that is very flexible and easy to 
 understand due to it't easy to read and understand methods. If you think there
 would be a great method to be created to make your life easier...Ruby probably
 has it.
 
-3. Implicit return: Ruby, Python are two languaged that i can think of that 
+3. Implicit return: 
+* Ruby and Python are two languaged that i can think of that 
 utilize this. This essentially means that you if you don't provide a return
 in your code, then it will return the last line of code for you.
 
-4. Ruby blocks: Ruby blocks are lines of code that perform a sequence of
+4. Ruby blocks: 
+* Ruby blocks are lines of code that perform a sequence of
 operations. they can be placed inside methods ans then called to run those 
 blocks of code as well.  
 
-5. Ruby hashes: A hash is based on Key/Value pairs and is the equivalent of an 
+5. Ruby hashes: 
+* A hash is based on Key/Value pairs and is the equivalent of an 
 Object in JavaScript with some differences in sytax and name. 
