@@ -32,10 +32,14 @@ it is a syntax extension of JavaScript which produce React elements. It also
 mentions that JSX is not required to create React apps, but it is recomended.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 <!-- ----------------------------------------------------------------------- -->
 2. What is yarn? What file(s) are modified in a React application when you run 
 yarn?
+=======
+2. What is yarn? What file(s) are modified in a React application when you run yarn?
+>>>>>>> parent of 3c30ea8 (updated formatting)
 =======
 2. What is yarn? What file(s) are modified in a React application when you run yarn?
 >>>>>>> parent of 3c30ea8 (updated formatting)
