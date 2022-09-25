@@ -2,12 +2,9 @@
 
 Answer the following questions.
 
-First, without external resources. Challenge yourself to answer from memory as 
-if you were in a job interview.
+First, without external resources. Challenge yourself to answer from memory as if you were in a job interview.
 
-Then, research the question to expand on your answer. Even if you feel you have 
-answered the question completely, there is always something more to learn. Write 
-your researched answer in your OWN WORDS.
+Then, research the question to expand on your answer. Even if you feel you have answered the question completely, there is always something more to learn. Write your researched answer in your OWN WORDS.
 
 1. What is JSX? What is one syntax difference between HTML and JSX?
 
@@ -34,10 +31,14 @@ Researched answer:
 it is a syntax extension of JavaScript which produce React elements. It also 
 mentions that JSX is not required to create React apps, but it is recomended.
 
+<<<<<<< HEAD
 ---
 <!-- ----------------------------------------------------------------------- -->
 2. What is yarn? What file(s) are modified in a React application when you run 
 yarn?
+=======
+2. What is yarn? What file(s) are modified in a React application when you run yarn?
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
 Your answer:
 * Yarn is a package manager that allows developers to easily deploy, manage, 

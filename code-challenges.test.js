@@ -4,8 +4,7 @@ const { clear } = require("console");
 
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
-// If you get stuck, please leave comments to help us understand your thought
-// process
+// If you get stuck, please leave comments to help us understand your thought process
 
 // Use test driven development to complete the following questions
 // Add appropriate dependencies: $ yarn add jest
@@ -13,6 +12,7 @@ const { clear } = require("console");
 // Reminder: The test will call your function
 // Run the file with the following command: $ yarn jest
 
+<<<<<<< HEAD
 //==============================================================================
 // --------------------1)👉 Create a function that takes in a number
 // (greater than 2) and returns an array that length containing the numbers
@@ -20,6 +20,9 @@ const { clear } = require("console");
 //==============================================================================
 // a)🧪 Create a test with expect statements for each of the variables provided.
 //------------------------------------------------------------------------------
+=======
+// --------------------1) Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
 describe("getFibonacci", () => {
   it("returns an array of numbers in Fibonacci sequence", () => {
@@ -30,6 +33,7 @@ describe("getFibonacci", () => {
     const expected1 = [1, 1, 2, 3, 5, 8];
     const expected2 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
 
+<<<<<<< HEAD
     expect(getFibonacci(fibLength1)).toEqual(expected1);
     expect(getFibonacci(fibLength2)).toEqual(expected2);
   });
@@ -46,16 +50,29 @@ describe("getFibonacci", () => {
     const fibLength4 = -22;
     //=== Expected Test Results ===
     const expected4 = "Number must be greater than 2";
+=======
+const fibLength1 = 6
+// Expected output: [1, 1, 2, 3, 5, 8]
+
+const fibLength2 = 10
+// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
     expect(getFibonacci(fibLength4)).toEqual(expected4);
   });
 });
 
+<<<<<<< HEAD
 //---------------------||❌ Initial Test Results ❌||---------------------------
 // ● getFibonacci › returns that number must be greater than 2 if negative number
+=======
+// --------------------2) Create a function that takes in an object and returns an array of the numbers sorted from least to greatest.
+// Hint: Check out this resource: Object.values() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
 // ReferenceError: getFibonacci is not defined
 
+<<<<<<< HEAD
 //   46 |     const expected4 = "Number must be greater than 2";
 //   47 |
 // > 48 |     expect(getFibonacci(fibLength4)).toEqual(expected4);
@@ -227,6 +244,29 @@ const sortObjNumbers = (obj) => {
     return a - b;
   });
 };
+=======
+const studyMinutesWeek1 = {
+  sunday: 90,
+  monday: 30,
+  tuesday: 20,
+  wednesday: 15,
+  thursday: 30,
+  friday: 15,
+  saturday: 60
+}
+// Expected output: [15, 15, 20, 30, 30, 60, 90]
+
+const studyMinutesWeek2 = {
+  sunday: 100,
+  monday: 10,
+  tuesday: 45,
+  wednesday: 60,
+  thursday: 20,
+  friday: 15,
+  saturday: 65
+}
+// Expected output: [10, 15, 20, 45, 60, 65, 100]
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
 //--------------------||✅ Final Test Results ✅||------------------------------
 // yarn run v1.22.19
@@ -241,6 +281,7 @@ const sortObjNumbers = (obj) => {
 //   sortObjNumbers
 //     ✓ returns an array of the numbers sorted from least to greatest.
 
+<<<<<<< HEAD
 // Test Suites: 1 passed, 1 total
 // Tests:       4 passed, 4 total
 // Snapshots:   0 total
@@ -248,6 +289,9 @@ const sortObjNumbers = (obj) => {
 // Ran all test suites.
 // ✨  Done in 0.76s.
 //------------------------------------------------------------------------------
+=======
+// --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
 //==============================================================================
 // --------------------3)👉 Create a function that takes in an array and returns
@@ -264,6 +308,7 @@ describe("accumulateArray", () => {
     const expected1 = [100, 83, 60, 51];
     const expected2 = [250, 161, 261, 165];
 
+<<<<<<< HEAD
     expect(accumulateArray(accountTransactions1)).toEqual(expected1);
     expect(accumulateArray(accountTransactions2)).toEqual(expected2);
   });
@@ -292,6 +337,16 @@ describe("accumulateArray", () => {
 //   accumulateArray
 //     ✕ returns an array of the accumulating sum
 //     ✕ An empty array should return an empty array
+=======
+const accountTransactions1 = [100, -17, -23, -9]
+// Expected output: [100, 83, 60, 51]
+
+const accountTransactions2 = [250, -89, 100, -96]
+// Expected output: [250, 161, 261, 165]
+
+const accountTransactions3 = []
+// Expected output: []
+>>>>>>> parent of 3c30ea8 (updated formatting)
 
 //   ● accumulateArray › returns an array of the accumulating sum
 
