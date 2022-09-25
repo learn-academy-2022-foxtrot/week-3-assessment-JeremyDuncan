@@ -30,8 +30,8 @@ camelCase.
 for event listeners on mouse click events.
 
 Researched answer:
-According to: https://reactjs.org/docs/introducing-jsx.html,
-* JSX is a syntax extension of JavaScript which produce React elements. It also 
+* According to: https://reactjs.org/docs/introducing-jsx.html,
+it is a syntax extension of JavaScript which produce React elements. It also 
 mentions that JSX is not required to create React apps, but it is recomended.
 
 ---
@@ -50,8 +50,8 @@ faster and more secure than NPM.
 verifies your applications dependencies. It will download any that are missing. 
 
 Researched answer:
-According to: https://classic.yarnpkg.com/en/docs/getting-started,
-* Yarn is a package manager for code that gives developers the ability to share 
+* According to: https://classic.yarnpkg.com/en/docs/getting-started,
+Yarn is a package manager for code that gives developers the ability to share 
 code with others. The code that's stored by Yarn is refered to as a Package or a
 Module. Yarn also uses a file called package.json to describe everything that is 
 in a particular package.
@@ -68,7 +68,7 @@ Researched answer:
 * According to https://www.javascripttutorial.net/javascript-anonymous-functions/
 An anonymous function is a function that does not have a name.
 
-Examples:
+*Examples:
 ```javascript
 let example = function() {
   console.log("This is an anonymous function");
@@ -94,7 +94,7 @@ makes changes to only the affected nodes that changed.
 * Props are used to access the value of state from other components. 
 
 Researched answer:
-According to: https://www.geeksforgeeks.org/what-are-the-differences-between-props-and-state/#:~:text=Props%20are%20used%20to%20pass,be%20passed%20to%20other%20components.
+* According to: https://www.geeksforgeeks.org/what-are-the-differences-between-props-and-state/#:~:text=Props%20are%20used%20to%20pass,be%20passed%20to%20other%20components.
 * State is the part of the application that changes. any component can have a 
 state, and the state is mutable.
 Props are properties that are used to pass data thats unmutable from one 
@@ -108,7 +108,7 @@ Your answer:
 representaion of the code inside a webpage thats created by a web browser.
 
 Researched answer:
-According to: https://frontend.turing.edu/lessons/module-1/js-intro-to-the-dom.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=517671727591&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJuq0hVzqEMjsv45Z-vMONxGC3orsxivCMoA2-xD94FqykOaqV7UJLEUaAr5iEALw_wcB,
+* According to: https://frontend.turing.edu/lessons/module-1/js-intro-to-the-dom.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=517671727591&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJuq0hVzqEMjsv45Z-vMONxGC3orsxivCMoA2-xD94FqykOaqV7UJLEUaAr5iEALw_wcB,
 * The DOM is the interface for HTML. The DOM is created after the web browser 
 interpets the HTML code. When the DOM is created it produces a DOM tree thats 
 logically organized. The DOM can be accessed by using the document call.
@@ -125,42 +125,20 @@ document.getElementsByTagName("button")
 6. STRETCH: Which is the difference between a div and a span?
 
 Your answer:
-* A div is used to group large sections of code logically which can then be used 
-too apply Classes or IDs. This logical seperation can then be manipulated in CSS
-which will allow you to position and style your sections of code the way you 
-would like.
-* A span is similar to how a div works, but it is used to select small sections 
-of code, verses large sections that like a.
+
 
 Researched answer:
-According to : https://blog.hubspot.com/website/span-vs-div#:~:text=Span%20and%20div%20are%20both,for%20inline%20organization%20and%20styling.
-* Div and Span are generic elements in HTML that group together related data in 
-a webpage. 
-* It goes on to say that div's are often used to group paragraphs, 
-images, and headings, while Span is used to apply styling to a small portion of
-code. 
-* It states that Span is generally used for small segments of text and other
-elements that are inline with web page content.
+
 ---
 <!-- ----------------------------------------------------------------------- -->
 ## Looking Ahead: Terms for Next Week
 
-1. Object-oriented programming: OOP is the one of the most popular programming 
-  paradigm used by many languages. With OOP everything is essentially designed 
-  around Object's, their data, and methods.
-  
-2. Ruby: An object oriented language that is very flexible and easy to 
-understand due to it't easy to read and understand methods. If you think there
-would be a great method to be created to make your life easier...Ruby probably
-has it.
+1. Object-oriented programming:
 
-3. Implicit return: Ruby, Python are two languaged that i can think of that 
-utilize this. This essentially means that you if you don't provide a return
-in your code, then it will return the last line of code for you.
+2. Ruby:
 
-4. Ruby blocks: Ruby blocks are lines of code that perform a sequence of
-operations. they can be placed inside methods ans then called to run those 
-blocks of code as well.  
+3. Implicit return:
 
-5. Ruby hashes: A hash is based on Key/Value pairs and is the equivalent of an 
-Object in JavaScript with some differences in sytax and name. 
+4. Ruby blocks:
+
+5. Ruby hashes:
